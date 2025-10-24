@@ -1,7 +1,7 @@
 #include "go_asm.h"
 #include "textflag.h"
 
-// func Call1ArgNoResult(function unsafe.Pointer, arg1 uintptr, arg2 uintptr, result uintptr) uint
+// func Call1ArgNoResult(function unsafe.Pointer, arg1 uintptr) uint
 TEXT ·Call1ArgNoResult(SB), NOSPLIT, $0-16
     // Загружаем аргументы
     MOVQ    function+0(FP), AX   // указатель на функцию
