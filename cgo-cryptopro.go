@@ -9,7 +9,7 @@ import (
 
 /*
 #cgo CFLAGS: -I/opt/cprocsp/include/ -I/opt/cprocsp/include/cpcsp -I/opt/cprocsp/include/pki -Iclib/include
-#cgo LDFLAGS: -L/root/ccp/clib/build -lcryptopro
+#cgo LDFLAGS: -Lclib/build -lcryptopro
 #include "cryptopro.h"
 */
 import "C"
